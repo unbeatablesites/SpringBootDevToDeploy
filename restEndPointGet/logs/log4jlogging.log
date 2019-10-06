@@ -19,3 +19,17 @@
 18:14:45.088 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
 18:14:45.126 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
 18:14:45.148 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+18:39:52.006 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:39:52.008 [http-nio-9090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+18:39:52.042 [http-nio-9090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+18:39:52.043 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 35 ms
+18:39:52.070 [http-nio-9090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/gethierchical", parameters={}
+18:39:52.084 [http-nio-9090-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.util.HashMap<java.lang.String, java.lang.Object> frank.in.restEndPointGet.Controller.REstEndPoint.getAnnotatedProperties()
+18:39:52.211 [http-nio-9090-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+18:39:52.222 [http-nio-9090-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [{author=Frank C Uzoka Jr, name=AWS AND DOCKER, chapterCount=3, rating=9}]
+18:39:52.416 [http-nio-9090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+18:39:56.360 [http-nio-9090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/gethierchical", parameters={}
+18:39:56.362 [http-nio-9090-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.util.HashMap<java.lang.String, java.lang.Object> frank.in.restEndPointGet.Controller.REstEndPoint.getAnnotatedProperties()
+18:39:56.365 [http-nio-9090-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+18:39:56.366 [http-nio-9090-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [{author=Frank C Uzoka Jr, name=AWS AND DOCKER, chapterCount=3, rating=9}]
+18:39:56.370 [http-nio-9090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
