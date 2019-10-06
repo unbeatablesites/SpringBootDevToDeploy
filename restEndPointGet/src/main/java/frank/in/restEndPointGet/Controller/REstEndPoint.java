@@ -1,8 +1,12 @@
 package frank.in.restEndPointGet.Controller;
 
 
+import frank.in.restEndPointGet.CourseConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
 
 @RestController
 public class REstEndPoint {
@@ -13,11 +17,26 @@ public class REstEndPoint {
     @Value("${default.course.chapterCount}")
     private int chaptersCount;
 
-
+    @Autowired
+    private CourseConfiguration courseConfiguration;
 
 
     @RequestMapping("/defaultCourse")
-    public Course getDefaultCourse(@RequestParam(value = "name",required = false)String name,
+    public HashMap<String, Object> getDefaultCourse(@RequestParam(value = "name",required = false)String name,
+                                    @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
+    ){
+        HashMap<String, Object> map = new HashMap<>();
+
+        map.put("name",courseConfiguration.getName());
+        map.put("chapterCount",courseConfiguration.getChapterCount());
+        map.put("rating",courseConfiguration.getRating());
+        map.put("author",courseConfiguration.getAuthor());
+
+        return map;
+    }
+
+    @RequestMapping("/gethierchical")
+    public Course getAnnotatedProperties(@RequestParam(value = "name",required = false)String name,
                               @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
     ){
         return new Course(cName,chaptersCount);
