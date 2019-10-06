@@ -1,0 +1,51 @@
+2019-10-06 17:35:42.730 ERROR 91459 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level '=DEBUG' for 'org.springframework.web'
+2019-10-06 17:35:42.860  INFO 91459 --- [main] f.i.r.RestEndPointGetApplicationTests    : Starting RestEndPointGetApplicationTests on Franks-MacBook-Air.local with PID 91459 (started by frankuzoka in /Users/frankuzoka/Desktop/SpringBootDevToDeploy/restEndPointGet)
+2019-10-06 17:35:42.862  INFO 91459 --- [main] f.i.r.RestEndPointGetApplicationTests    : No active profile set, falling back to default profiles: default
+2019-10-06 17:35:45.212  INFO 91459 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-06 17:35:45.704  INFO 91459 --- [main] f.i.r.RestEndPointGetApplicationTests    : Started RestEndPointGetApplicationTests in 3.336 seconds (JVM running for 4.532)
+2019-10-06 17:35:46.321  INFO 91459 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-06 17:36:48.815 ERROR 91680 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level '=DEBUG' for 'org.springframework.web'
+2019-10-06 17:36:49.103  INFO 91680 --- [main] f.i.r.RestEndPointGetApplication         : Starting RestEndPointGetApplication on Franks-MacBook-Air.local with PID 91680 (/Users/frankuzoka/Desktop/SpringBootDevToDeploy/restEndPointGet/target/classes started by frankuzoka in /Users/frankuzoka/Desktop/SpringBootDevToDeploy/restEndPointGet)
+2019-10-06 17:36:49.108  INFO 91680 --- [main] f.i.r.RestEndPointGetApplication         : No active profile set, falling back to default profiles: default
+2019-10-06 17:36:51.612  INFO 91680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-10-06 17:36:51.660  INFO 91680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-06 17:36:51.660  INFO 91680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-06 17:36:51.804  INFO 91680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-06 17:36:51.804  INFO 91680 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2496 ms
+2019-10-06 17:36:52.198  INFO 91680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-06 17:36:52.542  INFO 91680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2019-10-06 17:36:52.548  INFO 91680 --- [main] f.i.r.RestEndPointGetApplication         : Started RestEndPointGetApplication in 4.631 seconds (JVM running for 5.687)
+2019-10-06 17:37:41.579  INFO 91680 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-06 17:37:41.581  INFO 91680 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-06 17:37:41.607  INFO 91680 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-10-06 17:38:16.125  WARN 91680 --- [http-nio-9090-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-10-06 17:41:30.185  INFO 91680 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-06 17:41:41.732  INFO 92624 --- [main] f.i.r.RestEndPointGetApplication         : Starting RestEndPointGetApplication on Franks-MacBook-Air.local with PID 92624 (/Users/frankuzoka/Desktop/SpringBootDevToDeploy/restEndPointGet/target/classes started by frankuzoka in /Users/frankuzoka/Desktop/SpringBootDevToDeploy/restEndPointGet)
+2019-10-06 17:41:41.742  INFO 92624 --- [main] f.i.r.RestEndPointGetApplication         : No active profile set, falling back to default profiles: default
+2019-10-06 17:41:48.390  INFO 92624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-10-06 17:41:48.559  INFO 92624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-06 17:41:48.560  INFO 92624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-06 17:41:48.912  INFO 92624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-06 17:41:48.912 DEBUG 92624 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-06 17:41:48.912  INFO 92624 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6680 ms
+2019-10-06 17:41:49.404 DEBUG 92624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-06 17:41:49.782  INFO 92624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-06 17:41:49.802 DEBUG 92624 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-06 17:41:50.018 DEBUG 92624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-06 17:41:50.058 DEBUG 92624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-06 17:41:50.077 DEBUG 92624 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-06 17:41:50.444  INFO 92624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2019-10-06 17:41:50.459  INFO 92624 --- [main] f.i.r.RestEndPointGetApplication         : Started RestEndPointGetApplication in 11.128 seconds (JVM running for 12.697)
+2019-10-06 17:51:04.541  INFO 92624 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-06 17:51:18.071  INFO 94538 --- [main] f.i.r.RestEndPointGetApplicationTests    : Starting RestEndPointGetApplicationTests on Franks-MacBook-Air.local with PID 94538 (started by frankuzoka in /Users/frankuzoka/Desktop/SpringBootDevToDeploy/restEndPointGet)
+2019-10-06 17:51:18.087  INFO 94538 --- [main] f.i.r.RestEndPointGetApplicationTests    : No active profile set, falling back to default profiles: default
+2019-10-06 17:51:18.133 DEBUG 94538 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4fbe37eb
+2019-10-06 17:51:19.861 DEBUG 94538 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-06 17:51:20.166  INFO 94538 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-06 17:51:20.197 DEBUG 94538 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-06 17:51:20.300 DEBUG 94538 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-06 17:51:20.347 DEBUG 94538 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-06 17:51:20.364 DEBUG 94538 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-06 17:51:20.714  INFO 94538 --- [main] f.i.r.RestEndPointGetApplicationTests    : Started RestEndPointGetApplicationTests in 3.285 seconds (JVM running for 4.625)
+2019-10-06 17:51:21.236 DEBUG 94538 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4fbe37eb, started on Sun Oct 06 17:51:18 EDT 2019
+2019-10-06 17:51:21.239  INFO 94538 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
