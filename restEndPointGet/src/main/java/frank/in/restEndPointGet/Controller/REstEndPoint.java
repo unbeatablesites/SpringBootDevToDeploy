@@ -29,9 +29,7 @@ public class REstEndPoint {
     }
 
     @RequestMapping("/gethierchical")
-    public HashMap<String, Object> getAnnotatedProperties(@RequestParam(value = "name",required = false)String name,
-                                                    @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
-    ){
+    public HashMap<String, Object> getAnnotatedProperties(){
         HashMap<String,Object>  map = new HashMap<>();
 
         map.put("name",courseConfiguration.getName());
