@@ -22,10 +22,17 @@ public class REstEndPoint {
 
 
     @RequestMapping("/defaultCourse")
-    public HashMap<String, Object> getDefaultCourse(@RequestParam(value = "name",required = false)String name,
-                                    @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
+    public Course getDefaultCourse(@RequestParam(value = "name",required = false)String name,
+                                   @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
     ){
-        HashMap<String, Object> map = new HashMap<>();
+        return new Course(cName,chaptersCount);
+    }
+
+    @RequestMapping("/gethierchical")
+    public HashMap<String, Object> getAnnotatedProperties(@RequestParam(value = "name",required = false)String name,
+                                                    @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
+    ){
+        HashMap<String,Object>  map = new HashMap<>();
 
         map.put("name",courseConfiguration.getName());
         map.put("chapterCount",courseConfiguration.getChapterCount());
@@ -33,13 +40,6 @@ public class REstEndPoint {
         map.put("author",courseConfiguration.getAuthor());
 
         return map;
-    }
-
-    @RequestMapping("/gethierchical")
-    public Course getAnnotatedProperties(@RequestParam(value = "name",required = false)String name,
-                              @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
-    ){
-        return new Course(cName,chaptersCount);
     }
 
 
