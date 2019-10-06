@@ -18,7 +18,7 @@ public class REstEndPoint {
 
     @RequestMapping("/defaultCourse")
     public Course getDefaultCourse(@RequestParam(value = "name",required = false)String name,
-                              @RequestParam(value = "chapterCount",required = false)int chapterCount
+                              @RequestParam(value = "chapterCount", defaultValue = "2",required = false)int chapterCount
     ){
         return new Course(cName,chaptersCount);
     }
