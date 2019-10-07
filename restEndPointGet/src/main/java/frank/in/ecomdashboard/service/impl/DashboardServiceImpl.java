@@ -47,4 +47,20 @@ public class DashboardServiceImpl implements DashboardService {
     public List<EmployeeInformation> getAllEmployee() {
         return employeeInformationRepository.findAll();
     }
+
+    @Override
+    public void addEmployee(EmployeeInformation employeeInformation) {
+        employeeInformationRepository.save(employeeInformation);
+    }
+
+    @Override
+    public void deleteEmployee(EmployeeInformation employeeInformation) {
+
+        employeeInformationRepository.delete(employeeInformation);
+    }
+
+    @Override
+    public EmployeeInformation updateEmployee(EmployeeInformation employeeInformation) {
+        return employeeInformationRepository.save(employeeInformation);
+    }
 }

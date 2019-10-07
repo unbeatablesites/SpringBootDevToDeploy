@@ -14,4 +14,9 @@ public interface DashboardService {
     List<OrderCollectionStatus> getOrderCollection();
 
     List<EmployeeInformation> getAllEmployee();
+
+    void addEmployee(EmployeeInformation employeeInformation);
+    void deleteEmployee(EmployeeInformation employeeInformation);
+
+    EmployeeInformation updateEmployee(EmployeeInformation employeeInformation);
 }
