@@ -5,7 +5,11 @@ import frank.in.ecomdashboard.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 @Component
 public class DashboardServiceImpl implements DashboardService {
@@ -26,8 +30,23 @@ public class DashboardServiceImpl implements DashboardService {
     private ProductCategoryRepository productCategoryRepository;
 
     @Override
-    public List<CompanyRevenue> getTodayRevenueDash() {
-        return companyRevenueRepository.findAll();
+    public HashMap<String,Object> getTodayRevenueDash() {
+
+        HashMap<String,Object> populateCompnyRev = new HashMap<>();
+
+        List<CompanyRevenue> companyRevenueList = companyRevenueRepository.findAll();
+
+        List<String> label = new ArrayList<>();
+        List<String> _revenue = new ArrayList<>();
+
+        double totalMargin = 0;
+        double totalExpense =0;
+        double totalRevenue =0;
+        Locale locale = new Locale("en","US");
+        NumberFormate currencyFormatter = NumberFormat.getCurrencyInstance(locale);
+
+        for (CompanyRevenue companyRevenue : companyRevenueList)
+
     }
 
     @Override
