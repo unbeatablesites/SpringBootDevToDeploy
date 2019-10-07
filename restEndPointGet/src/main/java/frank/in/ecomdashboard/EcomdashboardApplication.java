@@ -1,4 +1,4 @@
-package frank.in.ecomdashboard.repositories;
+package frank.in.ecomdashboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
