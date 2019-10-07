@@ -11,5 +11,5 @@ import java.util.List;
 @Qualifier(value = "productCategoryRepository")
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory,Long> {
 
-    List<ProductCategory> findByBestCategoy(boolean bestCategory);
+    List<ProductCategory> findBybestCategory(boolean bestCategory);
 }

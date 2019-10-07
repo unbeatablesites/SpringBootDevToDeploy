@@ -3,9 +3,11 @@ package frank.in.ecomdashboard.service.impl;
 import frank.in.ecomdashboard.entity.*;
 import frank.in.ecomdashboard.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class DashboardServiceImpl implements DashboardService {
 
     @Autowired
@@ -30,7 +32,7 @@ public class DashboardServiceImpl implements DashboardService {
 
     @Override
     public List<ProductCategory> getBestCategory() {
-        return productCategoryRepository.findByBestCategoy(true);
+        return productCategoryRepository.findBybestCategory(true);
     }
 
     @Override
@@ -49,8 +51,13 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public void addEmployee(EmployeeInformation employeeInformation) {
-        employeeInformationRepository.save(employeeInformation);
+    public EmployeeInformation getEmployee(String pk) {
+        return employeeInformationRepository.findByPk(pk);
+    }
+
+    @Override
+    public EmployeeInformation addEmployee(EmployeeInformation employeeInformation) {
+      return employeeInformationRepository.save(employeeInformation);
     }
 
     @Override
